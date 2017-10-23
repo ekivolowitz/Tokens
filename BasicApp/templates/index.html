@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  	<title>Web3JS!</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}" />
+	<script src="{{url_for('static', filename='main.js')}}"></script>
+
+</head>
+
+<body>
+	<div class="input_div">
+		Address: 
+		<input type="text" name="Address" value="0x0" id="addr">
+		<br>
+		Amount: 
+		<input type="text" name="Amount" value="0" id="amount">
+		<br>
+		<input type="submit" value="Submit" onclick="sendTx()">
+	</div>
+</body>
+</html>

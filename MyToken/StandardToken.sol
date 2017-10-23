@@ -1,0 +1,20 @@
+pragma solidity ^0.4.8;
+import "./Token.sol";
+contract StandardToken {
+
+    function transfer(address _to, uint256 _value) public returns (bool success) {
+        if (balances[msg.sender] >= _value && _value > 0) {
+            balances[msg.sender] -= _value;
+            balances[_to] += _value;
+            Transfer(msg.sender, _to, _value);
+            return true;
+        } else { return false; }
+    }
+    
+    function balanceOf(address _owner) public constant returns (uint256 balance) {
+        return balances[_owner];
+    }
+
+    mapping (address => uint256) balances;
+    uint256 public totalSupply;
+}

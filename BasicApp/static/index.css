@@ -1,0 +1,23 @@
+html {
+	background-color: "#FF45D3";
+	margin: 0;
+    height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-color: "#FF45D3";
+}
+
+
+.input_div {
+	padding-top: 25%;
+	height: 100%;
+	background-color: lightblue;
+	text-align: center;
+}
+
+input {
+	width: 300px;
+}
